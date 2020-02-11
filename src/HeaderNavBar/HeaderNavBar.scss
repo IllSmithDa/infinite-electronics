@@ -1,0 +1,140 @@
+
+.nav-container {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.navitem-container, .secondary-container{
+  margin: 0px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.navitem-container ul, .secondary-container ul {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: flex;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+.search-container  {
+  height: 50px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: flex;
+  padding-top: 5px;
+}
+.navitem-container ul li, .secondary-container ul li {
+  text-align: center;
+  color: white;
+  padding: 12px 10px 0px 10px;
+  width: 14.28%;
+  font-size: 15px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.navitem-container ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navitem-container ul div{
+  width: 14.28%;
+  display: flex;
+  justify-content: center;
+}
+
+.navitem-container ul img {
+  padding: 9px 10px 0px 10px;
+  width: 35px;
+  cursor: pointer;
+}
+.search-container {
+  display: none;
+  background-color: #000000;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+.search-container div   {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-column-gap: 5px;
+}
+
+.search-container div div img {
+  width: 100%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.search-container div input {
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  background-color: black;
+  border: 0px solid black;
+  outline:none;
+}
+.search-container div div span {
+  color: white;
+  padding: 5px 10px 0px 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
